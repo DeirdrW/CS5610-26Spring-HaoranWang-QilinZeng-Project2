@@ -19,6 +19,7 @@ export default function Board(){
             value={val}
             fixed={original[r][c]!==0}
             error={res.errors && res.errors.has(`${r},${c}`)}
+            disabled={res.complete}
           />
         )))}
       </div>
