@@ -5,9 +5,11 @@ import App from './App'
 import { SudokuProvider } from './context/SudokuContext'
 import './styles/global.css'
 
+const BASENAME = '/CS5610-26Spring-HaoranWang-QilinZeng-Project2'
+
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={BASENAME}>
       <SudokuProvider>
         <App />
       </SudokuProvider>
